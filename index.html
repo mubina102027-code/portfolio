@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mubina Davronboyeva — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="glow" id="glow"></div>
+
+<header class="nav">
+  <a href="#home" class="logo">md<span>.</span>dev</a>
+  <nav>
+    <a href="#about" data-i18n="nav_about">Men haqimda</a>
+    <a href="#skills" data-i18n="nav_skills">Ko'nikmalar</a>
+    <a href="#projects" data-i18n="nav_projects">Loyihalar</a>
+    <a href="#contact" data-i18n="nav_contact">Aloqa</a>
+  </nav>
+  <div class="tools">
+    <button id="langBtn" aria-label="Language">EN</button>
+    <button id="themeBtn" aria-label="Theme">◐</button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-text">
+    <p class="hello" data-i18n="hello">Salom, men</p>
+    <h1><span class="w1">Mubina</span><span class="w2">Davronboyeva</span></h1>
+    <p class="typed"><span id="typed"></span><i class="caret"></i></p>
+    <div class="cta">
+      <a class="btn" href="#projects" data-i18n="cta1">Ishlarimni ko'ring</a>
+      <a class="btn ghost" href="#contact" data-i18n="cta2">Bog'laning</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <div class="arch"><img src="images/profile.jpg" alt="Mubina Davronboyeva"></div>
+    <div class="tag t1">&lt;html/&gt;</div>
+    <div class="tag t2">{ css }</div>
+    <div class="tag t3">js()</div>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <h2 data-i18n="about_t">Men haqimda</h2>
+  <p class="lead" data-i18n="about_p">Men dasturchiman. Oddiy g'oyani qulay, chiroyli va tez ishlaydigan veb-sahifaga aylantirishni yaxshi ko'raman. Har bir loyihada tartib va detalga e'tibor beraman.</p>
+  <ul class="facts">
+    <li><b>2+</b><span data-i18n="f1">yillik tajriba</span></li>
+    <li><b>15+</b><span data-i18n="f2">tugatilgan loyiha</span></li>
+    <li><b>UZ · EN</b><span data-i18n="f3">ishchi tillar</span></li>
+  </ul>
+</section>
+
+<section id="skills" class="sec">
+  <h2 data-i18n="skills_t">Ko'nikmalar</h2>
+  <div class="chips">
+    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Git</span><span>Figma</span><span>Responsive</span><span>Python</span>
+  </div>
+</section>
+
+<section id="projects" class="sec">
+  <h2 data-i18n="proj_t">Loyihalar</h2>
+  <div class="grid">
+    <article class="card"><div class="shot"><img src="images/project1.jpg" alt="" onerror="this.remove()"></div>
+      <h3 data-i18n="p1_t">Onlayn do'kon</h3><p data-i18n="p1_d">Kiyim do'koni uchun katalog va savat sahifasi.</p><a href="#" class="more" data-i18n="view">Ko'rish</a></article>
+    <article class="card"><div class="shot s2"><img src="images/project2.jpg" alt="" onerror="this.remove()"></div>
+      <h3 data-i18n="p2_t">Vazifalar ro'yxati</h3><p data-i18n="p2_d">JavaScript'da yozilgan tezkor to'-do ilova.</p><a href="#" class="more" data-i18n="view">Ko'rish</a></article>
+    <article class="card"><div class="shot s3"><img src="images/project3.jpg" alt="" onerror="this.remove()"></div>
+      <h3 data-i18n="p3_t">Landing sahifa</h3><p data-i18n="p3_d">Kichik biznes uchun moslashuvchan landing.</p><a href="#" class="more" data-i18n="view">Ko'rish</a></article>
+  </div>
+</section>
+
+<section id="contact" class="sec contact">
+  <h2 data-i18n="contact_t">Birga ishlaymizmi?</h2>
+  <a class="mail" href="mailto:mubina@example.com">mubina@example.com</a>
+  <div class="links"><a href="#">Telegram</a><a href="#">GitHub</a><a href="#">LinkedIn</a><a href="#">Instagram</a></div>
+</section>
+</main>
+
+<footer>© 2026 Mubina Davronboyeva</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
